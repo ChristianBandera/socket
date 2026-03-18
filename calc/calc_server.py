@@ -1,7 +1,7 @@
 import socket 
 import json
 
-SERVER_IP = '127.0.0.1'
+SERVER_IP = '192.168.179.253'
 SERVER_PORT = 5005
 BUFFER_SIZE = 1024
 
@@ -26,6 +26,8 @@ while True:
     primoNumero = data["primoNumero"]
     operazione = data["operazione"]
     secondoNumero = data["secondoNumero"]
+
+    print("Calcoli arrivati dal client: ", primoNumero, operazione, secondoNumero)
 
     #invio risposta al client
     reply = ""
